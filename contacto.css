@@ -1,0 +1,212 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white; 
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px px;
+    background-color: #56a26f;
+    color: #ffffff;
+    border-bottom: 3px solid #56a26f;
+}
+header img{
+    height: 100px;
+    padding: 0px;
+    margin-left: 60px;
+    margin-right: 0px;
+
+}
+.img{
+    display: flex;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 390px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 55px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2a7545;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    transform: 50%;
+    background-color: #34495e;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+nav ul li:hover > ul {
+    display: flex;
+    display: center;
+}
+
+nav ul li ul li {
+    width: 200px;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 10px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    background-color: #34495e;
+    color: #fff;
+    display: block;
+}
+
+nav ul li ul li a:hover {
+    background-color: transparent;
+    color: #2980b9;
+}
+.intro {    
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(180deg, #7ef7a6, #2980b9);
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:90vh;
+    gap: 90px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Estilo para los contenedores de video */
+.intro div {
+    background-color: #fff; /* Fondo blanco */
+    border: 2px solid #ddd; /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 20px 0; /* Espaciado entre contenedores */
+    padding: 15px; /* Espaciado interno */
+    height: 670px;
+    text-align: center; /* Centrar el texto */
+    overflow: hidden;
+    width: 800px;
+
+}
+
+/* Estilo para llas imagenes */
+.intro iframe {
+    width: 95%; /* Ancho completo del contenedor */
+    height: 85%; /* Altura fija */
+    border: none; /* Sin bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+.intro p {
+    margin: 10px; /* Espacio superior sin chocar con el video */
+    font-size: 1.6rem; /* Tamaño del texto más grande */
+    font-weight: bold; /* Hacer el texto más llamativo */
+    color: #000000; /* Color ligeramente oscuro para mejor contraste */
+    text-align: justify;
+    text-transform: capitalize; /* Primera letra de cada palabra en mayúscula */
+    line-height: 1.5; /* Separación entre líneas */
+    padding: 0 15px; /* Espaciado interno lateral del texto */
+    box-sizing: border-box; /* Incluir padding dentro del ancho total */
+}
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-10px);
+    }
+    40% {
+      transform: translateY(0);
+    }
+    60% {
+      transform: translateY(-6px);
+    }
+    80% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-3px);
+    }
+  }
+  /* Activar el rebote cuando el mouse pasa sobre el párrafo */
+  .intro p:hover {
+    animation: bounce 1.2s ease-in-out;
+  }
+
+.contac {    
+    display: flex;
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Alinear verticalmente */
+    gap: 200px; /* Espacio entre las imágenes */
+    margin: 0px;
+    height: 500px;
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(180deg, #2980b9, white);
+    flex-wrap: wrap; /* Para permitir que las imágenes se muevan a la siguiente línea si es necesario */
+}
+
+/* Estilo para las imágenes */
+.contac img {
+    width: 300px; /* Ajusta el tamaño de las imágenes */
+    height: 300px; /* Asegura que la imagen tenga la misma altura y ancho */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio circular */
+    border-radius: 50%; /* Hace las imágenes circulares */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar la imagen */
+}
+
+/* Estilo para la descripción */
+.contac p {
+    text-align: center; /* Centrar el texto debajo de cada imagen */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    text-transform: capitalize;
+}

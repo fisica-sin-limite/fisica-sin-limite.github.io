@@ -1,0 +1,271 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white; 
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px px;
+    background-color: #56a26f;
+    color: #ffffff;
+    border-bottom: 3px solid #56a26f;
+}
+header img{
+    height: 100px;
+    padding: 0px;
+    margin-left: 60px;
+    margin-right: 0px;
+
+}
+.img{
+    display: flex;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 390px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 55px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2a7545;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    transform: 50%;
+    background-color: #34495e;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+nav ul li:hover > ul {
+    display: flex;
+    display: center;
+}
+
+nav ul li ul li {
+    width: 200px;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 10px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    background-color: #34495e;
+    color: #fff;
+    display: block;
+}
+
+nav ul li ul li a:hover {
+    background-color: transparent;
+    color: #2980b9;
+}
+.tema1 {    
+    max-width: 200%;
+    margin: 0px auto;
+    padding: 50px;
+    background: linear-gradient(180deg, #7ef7a6, #2980b9);
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:90vh;
+    gap: 90px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Estilo para los contenedores de video */
+div {
+    background-color: #fff; /* Fondo blanco */
+    border: 2px solid #ddd; /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 20px 0; /* Espaciado entre contenedores */
+    padding: 15px; /* Espaciado interno */
+    max-width: 800px; /* Ancho máximo */
+    text-align: center; /* Centrar el texto */
+    overflow: hidden;
+}
+
+/* Estilo para llas imagenes */
+.tema1 img {
+    width: 95%; /* Ancho completo del contenedor */
+    height: 95%; /* Altura fija */
+    border: none; /* Sin bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+.tema1 p {
+    margin: 10px; /* Espacio superior sin chocar con el video */
+    font-size: 1.6rem; /* Tamaño del texto más grande */
+    font-weight: bold; /* Hacer el texto más llamativo */
+    color: #000000; /* Color ligeramente oscuro para mejor contraste */
+    text-align: center; /* Centrar el texto */
+    
+    text-transform: capitalize; /* Primera letra de cada palabra en mayúscula */
+    line-height: 1.5; /* Separación entre líneas */
+    padding: 0 15px; /* Espaciado interno lateral del texto */
+    box-sizing: border-box; /* Incluir padding dentro del ancho total */
+}
+.tema1 p:hover {
+    background-color: transparent;
+    color: #2980b9;
+}
+.tema2 {    
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 50px;
+    background: linear-gradient(180deg, #2980b9,  #7ef7a6) ;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:90vh;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Estilo para los contenedores de video */
+div {
+    background-color: #fff; /* Fondo blanco */
+    border: 2px solid #ddd; /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 20px 0; /* Espaciado entre contenedores */
+    padding: 15px; /* Espaciado interno */
+    max-width: 800px; /* Ancho máximo */
+    text-align: center; /* Centrar el texto */
+    overflow: hidden;
+}
+
+/* Estilo para llas imagenes */
+.tema2 img {
+    width: 95%; /* Ancho completo del contenedor */
+    height: 95%; /* Altura fija */
+    border: none; /* Sin bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+.tema2 p {
+    margin: 10px; /* Espacio superior sin chocar con el video */
+    font-size: 1.6rem; /* Tamaño del texto más grande */
+    font-weight: bold; /* Hacer el texto más llamativo */
+    color: #000000; /* Color ligeramente oscuro para mejor contraste */
+    text-align: center; /* Centrar el texto */
+    text-transform: capitalize; /* Primera letra de cada palabra en mayúscula */
+    line-height: 1.5; /* Separación entre líneas */
+    padding: 0 15px; /* Espaciado interno lateral del texto */
+    box-sizing: border-box; /* Incluir padding dentro del ancho total */
+}
+.tema2 p:hover {
+    background-color: transparent;
+    color: #2980b9;
+}
+.tema3 {    
+    max-width: 200%;
+    margin: 0px auto;
+    padding: 15px;
+    background: linear-gradient(180deg, #2980b9, white) ;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:90vh;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Estilo para los contenedores de video */
+div {
+    background-color: #fff; /* Fondo blanco */
+    border: 2px solid #ddd; /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 20px 0; /* Espaciado entre contenedores */
+    padding: 15px; /* Espaciado interno */
+    max-width: 800px; /* Ancho máximo */
+    text-align: center; /* Centrar el texto */
+    overflow: hidden;
+}
+
+/* Estilo para llas imagenes */
+.tema3 img {
+    width: 95%; /* Ancho completo del contenedor */
+    height: 95%; /* Altura fija */
+    border: none; /* Sin bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+.tema3 p {
+    margin: 10px; /* Espacio superior sin chocar con el video */
+    font-size: 1.6rem; /* Tamaño del texto más grande */
+    font-weight: bold; /* Hacer el texto más llamativo */
+    color: #000000; /* Color ligeramente oscuro para mejor contraste */
+    text-align: center; /* Centrar el texto */
+    text-transform: capitalize; /* Primera letra de cada palabra en mayúscula */
+    line-height: 1.5; /* Separación entre líneas */
+    padding: 0 15px; /* Espaciado interno lateral del texto */
+    box-sizing: border-box; /* Incluir padding dentro del ancho total */
+}
+.tema3 p:hover {
+    background-color: transparent;
+    color: #2980b9;
+}
+.tema1 a, .tema2 a, .tema3 a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Mantiene el color original del texto */
+    display: block; /* Hace que todo el enlace sea clickeable */
+    text-align: center; /* Asegura que el texto dentro del enlace se vea bien */
+}
